@@ -1,0 +1,78 @@
+/* Estiliza o fundo da página */
+body {
+    background-color: rgb(20, 20, 230);
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Centraliza o conteúdo */
+.container {
+    text-align: center;
+    background: rgba(204, 19, 19, 0.192);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animação do título */
+.titulo {
+    font-size: 50px;
+    color: rgb(223, 12, 12);
+    animation: bounce 1s infinite alternate;
+}
+
+/* Efeito de pulo no título */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+/* Estiliza a imagem */
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* Estiliza o botão */
+.botao {
+    background: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.botao:hover {
+    background: #e52e71;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Estiliza a mensagem oculta */
+.mensagem {
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
